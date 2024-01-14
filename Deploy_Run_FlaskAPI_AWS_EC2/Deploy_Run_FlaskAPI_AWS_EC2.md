@@ -10,7 +10,7 @@ Allow inbound traffic HTTP(Port 80), SSH(Port 22), HTTPS(Port 443), Custom TCP(8
 Create/Reuse Key-pair for connecting with your instance.
 ```
 
-SSH into Ubuntu EC2
+ SSH to connect into AWS Ubuntu EC2
 ```bash
 Open a terminal
 Type $ ssh -i <your key name>.pem ubuntu@<Public DNS of your EC2>.
