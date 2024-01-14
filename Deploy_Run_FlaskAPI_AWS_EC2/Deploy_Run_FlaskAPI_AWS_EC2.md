@@ -3,13 +3,19 @@
 Create an Ubuntu EC2 on AWS to deploy our application.
 ```bash
 Log in to AWS Console.
-Go to EC2 Section and select Ubuntu 18.4 AMI
-Select t2.micro if you want to stay in free tier or any other instance type you want.
+Go to EC2 Section and select Ubuntu Server 22.04.
+Select t3.micro.
 Press Next until Security Groups.
-Allow HTTP (Port 80), SSH (Port 22), HTTPS (Port 443) inbound traffic and press next.
+Allow inbound traffic HTTP(Port 80), SSH(Port 22), HTTPS(Port 443), Custom TCP(8000) and press next.
 Create/Reuse Key-pair for connecting with your instance.
 ```
 
+SSH into Ubuntu EC2
+```bash
+Open a terminal
+Type $ ssh -i <your key name>.pem ubuntu@<Public DNS of your EC2>.
+If you get any error run $ chmod 400 <your key name>.pem then try again. 
+```
 
 Install Python Virtualenv
 ```bash
