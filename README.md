@@ -56,5 +56,19 @@ Fetches processed images based on depth range.
 
 ## Testing
 
-Run the following command to execute tests:
+To run the tests, navigate to the project root directory and execute the following command:
 
+python -m unittest discover -s tests
+
+This command will automatically discover and run all tests within the tests directory. Ensure that each component of the application (image resizing, database management, color mapping, and API functionality) has corresponding test cases in separate files under this directory.
+
+## Contributing
+
+Contributions to this project are welcome. Please adhere to this project's code of conduct while contributing.
+
+## License
+
+MIT
+
+## Contact
+For support or queries, reach out to me https://www.linkedin.com/in/bicerfatih/.
