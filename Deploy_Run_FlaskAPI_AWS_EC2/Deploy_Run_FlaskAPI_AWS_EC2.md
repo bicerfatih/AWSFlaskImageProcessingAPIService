@@ -24,8 +24,7 @@ sudo apt-get install python3-venv
 ```
 
 
-Activate the new virtual environment in a new directory
-Create a directory 
+Activate the new virtual environment in a new directory, for that create a directory 
 
 ```bash
 mkdir myFlaskAPI
