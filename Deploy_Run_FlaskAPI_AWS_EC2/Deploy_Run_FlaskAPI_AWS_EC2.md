@@ -1,5 +1,16 @@
 # Deploy and Run Flask App on AWS EC2 Instance
 
+Create an Ubuntu EC2 on AWS to deploy our application.
+```bash
+Log in to AWS Console.
+Go to EC2 Section and select Ubuntu 18.4 AMI
+Select t2.micro if you want to stay in free tier or any other instance type you want.
+Press Next until Security Groups.
+Allow HTTP (Port 80), SSH (Port 22), HTTPS (Port 443) inbound traffic and press next.
+Create/Reuse Key-pair for connecting with your instance.
+```
+
+
 Install Python Virtualenv
 ```bash
 sudo apt-get update
