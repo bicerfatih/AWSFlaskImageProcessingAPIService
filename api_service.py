@@ -3,7 +3,8 @@ API Service Module
 ------------------
 
 This module sets up and defines the Flask API for the image processing application. It provides
-endpoints for clients, such as retrieving processed image data.
+endpoints for clients, such as retrieving processed image data. It also saves the retrieving processed image into 
+the directory. 
 
 Functions:
 - get_frames(depth_min, depth_max): Retrieves and returns color-mapped frames within a specified depth range.
@@ -12,6 +13,7 @@ Functions:
 import sqlite3
 from flask import Flask, request, jsonify
 from color_mapping import apply_color_map
+import matplotlib.pyplot as plt
 
 app = Flask(__name__)
 
@@ -52,13 +54,16 @@ def api_get_frames():
     if depth_min is None or depth_max is None:
         return "Invalid request. Please specify depth_min and depth_max.", 400
     frames = get_frames(depth_min, depth_max)
-    
+
     for image in frames:
         depth = image['depth']
         plt.savefig(f"/Users/fatihbicer/PycharmProjects/pythonProject2/image_depth_{depth}.png", bbox_inches='tight')
         plt.show()
         plt.close()
+
     return jsonify(frames)
+
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000, debug=True)
