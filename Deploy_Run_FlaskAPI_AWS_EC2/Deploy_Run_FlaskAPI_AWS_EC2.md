@@ -184,12 +184,12 @@ I create a <projectname>.service file in the /etc/systemd/system folder, and spe
 
 	
 ```bash
-sudo nano /etc/systemd/system/helloworld.service
+sudo nano /etc/systemd/system/myFlaskAPI.service
 ```
 Then add this into the file.
 ```bash
 [Unit]
-Description=Gunicorn instance for a simple hello world app
+Description=Gunicorn instance for a simple myFlaskAPI app
 After=network.target
 [Service]
 User=ubuntu
@@ -232,7 +232,7 @@ upstream myFlaskAPI {
     server 127.0.0.1:8000;
 }
 ```
-Add a proxy_pass to flaskhelloworld atlocation /
+Add a proxy_pass to myFlaskAPI atlocation /
 ```bash
 location / {
     proxy_pass http://myFlaskAPI;
