@@ -36,7 +36,7 @@ This repository contains a Flask-based API designed for image processing. With t
 
 2. Access the API endpoints, for example:
     ```
-    GET /get_frames?depth_min=0.5&depth_max=2.0
+    http://127.0.0.1:8000/get_frames?depth_min=9011.1&depth_max=9011.5)
     ```
 
 ## API Reference
