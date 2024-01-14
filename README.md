@@ -70,9 +70,9 @@ Deployment in AWS Ubuntu EC2 environment. Ensuring scalability and performance. 
 
 Access the API endpoints, for example:
     ```
-    http://<Public IPv4 address here>:8000/get_frames?depth_min=9011.1&depth_max=9011.5)
+    http://<Public IPv4 address here>:8000/get_frames?depth_min=9000.1&depth_max=9000.5)
     ```
-
+This will retrieve first 5 rows of processed image data. 
 ## Contributing
 
 Contributions to this project are welcome. Please adhere to this project's code of conduct while contributing.
