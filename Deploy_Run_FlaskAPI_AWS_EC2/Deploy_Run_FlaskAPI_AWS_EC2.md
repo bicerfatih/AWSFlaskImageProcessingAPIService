@@ -22,9 +22,11 @@ Install Python Virtualenv
 sudo apt-get update
 sudo apt-get install python3-venv
 ```
-Activate the new virtual environment in a new directory
 
-Create directory
+
+Activate the new virtual environment in a new directory
+Create a directory 
+
 ```bash
 mkdir myFlaskAPI
 cd myFlaskAPI
