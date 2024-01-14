@@ -29,6 +29,12 @@ Create directory
 mkdir myFlaskAPI
 cd myFlaskAPI
 ```
+
+Upload the img.csv file into myFlaskAPI folder in AWS EC2
+```bash
+scp -i “<your key name>.pem” img.csv ubuntu@<Public DNS of your EC2>:myFlaskAPI/
+```
+
 Create the virtual environment
 ```bash
 python3 -m venv venv
