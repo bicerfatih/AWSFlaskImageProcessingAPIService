@@ -9,7 +9,8 @@ Please follow the steps in Deploy_Run_FlaskAPI_AWS_EC2/Deploy_Run_FlaskAPI_AWS_E
 - **Image Resizing**: Automatically adjusts image sizes while maintaining aspect ratios. (In our case adjustment is from 1x200 pixels to 1x150 pixels for the each frame.)
 - **Color Mapping**: Applies color mapping on grayscale images with based on pixel intensity.
 - **Database Management**: Efficiently stores and retrieves image data using SQLite.
-- **Flask API**: Provides an API for easy access to processed images.
+- **Flask API**: Provides an API for easy access to processed images. It returns resized and color_mapped image data in base64 and also saves the retrieving processed image into 
+the directory as a png image file. 
 - **AWS EC2 Deployment**: Optimized for deployment in AWS EC2 environment, ensuring scalability and performance. Please follow the steps in Deploy_Run_FlaskAPI_AWS_EC2 folder Deploy_Run_FlaskAPI_AWS_EC2.md file.
 
 ## Installation
