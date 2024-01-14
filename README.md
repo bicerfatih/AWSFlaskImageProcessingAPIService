@@ -72,7 +72,7 @@ Access the API endpoints, for example:
     ```
     http://<Public IPv4 address here>:8000/get_frames?depth_min=9000.1&depth_max=9000.5)
     ```
-This will retrieve the first 5 rows of processed image data. You can change the depth_min and depth_max values.
+This will retrieve the first 5 rows of processed image data. User can change the depth_min and depth_max values.
 
 ## Contributing
 
