@@ -8,7 +8,7 @@ This repository contains a Flask-based API designed for image processing. With t
 - **Color Mapping**: Applies color mapping on grayscale images with based on pixel intensity.
 - **Database Management**: Efficiently stores and retrieves image data using SQLite.
 - **Flask API**: Provides an API for easy access to processed images.
-- **AWS EC2 Deployment**: Optimized for deployment in AWS EC2 environment, ensuring scalability and performance.
+- **AWS EC2 Deployment**: Optimized for deployment in AWS EC2 environment, ensuring scalability and performance. Please follow the steps in Deploy_Run_FlaskAPI_AWS_EC2 folder Deploy_Run_FlaskAPI_AWS_EC2.md file.
 
 ## Installation
 
