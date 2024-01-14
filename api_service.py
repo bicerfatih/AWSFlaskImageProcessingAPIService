@@ -52,6 +52,12 @@ def api_get_frames():
     if depth_min is None or depth_max is None:
         return "Invalid request. Please specify depth_min and depth_max.", 400
     frames = get_frames(depth_min, depth_max)
+    
+    for image in frames:
+        depth = image['depth']
+        plt.savefig(f"/Users/fatihbicer/PycharmProjects/pythonProject2/image_depth_{depth}.png", bbox_inches='tight')
+        plt.show()
+        plt.close()
     return jsonify(frames)
 
 if __name__ == '__main__':
