@@ -63,6 +63,10 @@ python -m unittest discover -s tests
 
 This command will automatically discover and run all tests within the tests directory. Ensure that each component of the application (image resizing, database management, color mapping, and API functionality) has corresponding test cases in separate files under this directory.
 
+## AWS EC2 Deployment 
+
+Deployment in AWS Ubuntu EC2 environment. Ensuring scalability and performance. Please follow the steps in Deploy_Run_FlaskAPI_AWS_EC2 folder Deploy_Run_FlaskAPI_AWS_EC2.md file.
+
 ## Contributing
 
 Contributions to this project are welcome. Please adhere to this project's code of conduct while contributing.
