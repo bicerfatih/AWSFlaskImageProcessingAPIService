@@ -1,7 +1,7 @@
 # AWS EC2 Flask Image Processing API
 
 ## Project Description
-This repository contains a Flask-based API designed for efficient image processing. Tailored for deployment on AWS EC2, the application offers functionalities like image resizing, color mapping, and data handling through a SQLite database, making it ideal for cloud-based image processing solutions.
+This repository contains a Flask-based API designed for image processing. With the deployment on AWS EC2, the application offers functionalities like image resizing, color mapping, and data handling through a SQLite database, making it ideal for cloud-based image processing solutions.
 
 ## Features
 - **Image Resizing**: Automatically adjusts image sizes while maintaining aspect ratios.
