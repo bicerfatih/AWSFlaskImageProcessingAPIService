@@ -53,7 +53,7 @@ Create a Simple Flask API
 sudo nano app.py
 ```
 ```bash
-// Add this to main.py
+
 from flask import Flask, request, jsonify
 import sqlite3
 import numpy as np
