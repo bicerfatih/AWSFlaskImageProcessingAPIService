@@ -67,6 +67,12 @@ This command will automatically discover and run all tests within the tests dire
 
 Deployment in AWS Ubuntu EC2 environment. Ensuring scalability and performance. Please follow the steps in Deploy_Run_FlaskAPI_AWS_EC2 folder Deploy_Run_FlaskAPI_AWS_EC2.md file.
 
+
+Access the API endpoints, for example:
+    ```
+    http://<Public IPv4 address here>:8000/get_frames?depth_min=9011.1&depth_max=9011.5)
+    ```
+
 ## Contributing
 
 Contributions to this project are welcome. Please adhere to this project's code of conduct while contributing.
