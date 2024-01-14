@@ -31,7 +31,7 @@ mkdir myFlaskAPI
 cd myFlaskAPI
 ```
 
-Upload the img.csv file into myFlaskAPI folder in AWS EC2
+Upload the img.csv file into myFlaskAPI directory in AWS EC2
 ```bash
 scp -i “<your key name>.pem” img.csv ubuntu@<Public DNS of your EC2>:myFlaskAPI/
 ```
