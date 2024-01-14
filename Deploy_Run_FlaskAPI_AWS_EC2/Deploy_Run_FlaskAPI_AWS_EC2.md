@@ -10,7 +10,7 @@ Activate the new virtual environment in a new directory
 Create directory
 ```bash
 mkdir myFlaskAPI
-cd helloworld
+cd myFlaskAPI
 ```
 Create the virtual environment
 ```bash
@@ -76,7 +76,7 @@ resize_frames_in_csv_1d(csv_path, new_length, output_path)
 
 # Database
 
-csv_file = 'resized_csv.csv'
+csv_file = 'resized_img.csv'
 
 # Create a new SQLite database
 db_connection = sqlite3.connect('images.db')
@@ -165,8 +165,8 @@ Verify if it works by running
 python app.py
 ```
 Run Gunicorn WSGI server to serve the Flask Application
-When you “run” flask, you are actually running Werkzeug’s development WSGI server, which forward requests from a web server.
-Since Werkzeug is only for development, we have to use Gunicorn, which is a production-ready WSGI server, to serve our application.
+When you “run” flask, you are actually running WSGI server, which forward requests from a web server.
+Since this is only for development, we have to use Gunicorn, which is a production-ready WSGI server.
 
 Install Gunicorn using the below command:
 ```bash
@@ -178,15 +178,10 @@ gunicorn -b 0.0.0.0:8000 app:app
 ```
 Gunicorn is running (Ctrl + C to exit gunicorn)!
 
-Use systemd to manage Gunicorn
+I use systemd to manage Gunicorn
 Systemd is a boot manager for Linux. We are using it to restart gunicorn if the EC2 restarts or reboots for some reason.
-We create a <projectname>.service file in the /etc/systemd/system folder, and specify what would happen to gunicorn when the system reboots.
-We will be adding 3 parts to systemd Unit file — Unit, Service, Install
+I create a <projectname>.service file in the /etc/systemd/system folder, and specify when the system reboots.
 
-Unit — This section is for description about the project and some dependencies
-Service — To specify user/group we want to run this service after. Also some information about the executables and the commands.
-Install — tells systemd at which moment during boot process this service should start.
-With that said, create an unit file in the /etc/systemd/system directory
 	
 ```bash
 sudo nano /etc/systemd/system/helloworld.service
