@@ -46,7 +46,7 @@ the directory as a png image file.
 
 ### Get Frames
 
-**`GET /get_frames`**
+**`/get_frames`**
 
 Fetches processed images based on depth range.
 
