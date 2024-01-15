@@ -59,9 +59,9 @@ Fetches processed images based on depth range.
 
 To run the tests, navigate to the project root directory and execute the following command:
 
-python -m unittest discover -s tests
+python -m unittest discover -s test
 
-This command will automatically discover and run all tests within the tests directory. Ensure that each component of the application (image resizing, database management, color mapping, and API functionality) has corresponding test cases in separate files under this directory.
+This command will automatically discover and run all tests within the test directory. Ensure that each component of the application (image resizing, database management, color mapping, and API functionality) has corresponding test cases in separate files under this directory.
 
 ## AWS EC2 Deployment 
 
